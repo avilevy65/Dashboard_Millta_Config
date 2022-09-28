@@ -1,0 +1,58 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Fridge</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js" type="text/javascript"></script>
+<script src="https://code.highcharts.com/highcharts.js" type="text/javascript"></script>
+<script type="text/javascript">//<![CDATA[
+ $(document).ready(function () {
+		$.getJSON('./json.html', function (data) {
+					Highcharts.setOptions({
+					    global: {
+					        useUTC: false
+					    }
+					}); 
+				    Highcharts.chart('Graph', {
+
+				    title: {
+				    	text : "Fridge"
+				    },
+				    
+				    legend: {
+				        align: 'right',
+				        itemDistance : 20,
+				    },
+				    xAxis: {
+
+				         type: 'datetime',
+				         min : null,
+					 	 text: 'תאריך '
+				    },
+				    
+				    yAxis: [{
+					        title: {
+					            text: 'טמפרטורה'
+					        }
+					    },
+					    
+				        {
+					        title: {
+					          	text : "זמן"
+					          },
+					        opposite : true	
+					     }
+				    ],
+				    series: data
+				  })
+				});
+		
+		});
+//]]></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body dir="rtl">
+<h1>Frifge Temprature</h1><div dir="ltr" id="Graph" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+</body>
+</html>

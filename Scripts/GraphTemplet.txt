@@ -1,0 +1,65 @@
+
+
+<script>
+$(function (){
+    $('#container').highcharts({
+	credits: { enabled : false },
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: [@categories]
+        },
+        yAxis: [{
+            min: 0,
+            max:100,
+            title: {
+                text: '@title'
+            }
+        },{
+            title: {
+                text: 'Percent-%'
+            },
+            opposite: true
+        }],
+        legend: {
+            shadow: false
+        },
+
+tooltip: {
+//shared: true,
+formatter: function () {return 'IP-'+this.point.myData +'<br />'+'@name1'+'-'+this.point.myData1+'<br />'+'@name2'+'-'+this.point.myData2+'<br />'+this.point.myData3 ; }
+        },
+
+        plotOptions: {
+            column: {
+                grouping: false,
+                shadow: false,
+                borderWidth: 1
+            }
+
+        },
+
+        series: [{
+            name: '@name1',
+            color: 'rgba(165,170,217,1)',
+            data: [@data1],
+            pointPadding: 0.2,
+            pointPlacement: -0.2
+
+        }, {
+            name: '@name2',
+            color: 'rgba(126,86,134,.9)',
+            data: [@data2],
+            pointPadding: 0.3,
+            pointPlacement: -0.2
+
+                   }]
+    });
+});
+
+</script>
+
