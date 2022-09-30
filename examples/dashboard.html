@@ -18,24 +18,30 @@
 
 <head>
 
-    <script src="../datetimepicker/jquery.js"></script>
-    <script src="../Scripts/highcharts.js"></script>
-    <script src="../datetimepicker/jquery.datetimepicker.full.js"></script>
-    <link href="../datetimepicker/jquery.datetimepicker.min.css" rel="stylesheet" />
+    <!--<script src="../datetimepicker/jquery.js"></script>
+    <script src="../Scripts/highcharts.js"></script>-->
+    <!--<script src="../datetimepicker/jquery.datetimepicker.full.js"></script>
+    <link href="../datetimepicker/jquery.datetimepicker.min.css" rel="stylesheet" />-->
     <script src="../Scripts/export-data.js"></script>
     <script src="../Scripts/highcharts.src.js"></script>
     <script src="../Scripts/data.src.js"></script>
     <script src="../Scripts/exporting.src.js"></script>
     <script src="../Scripts/data.src.js"></script>
-   
+    <script src="../datetimepicker/jquery.datetimepicker.full.js"></script>
+    <link href="../datetimepicker/jquery.datetimepicker.min.css" rel="stylesheet" />
+    <script src="../datetimepicker/jquery.js"></script>
+    <script src="../Scripts/highcharts.js"></script>
+    <script src="../Scripts/exporting.src.js"></script>
+    <script src="../Scripts/accessibility.js"></script>
+    <script src="../Scripts/highcharts-more.js"></script>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="../assets/img/favicon.png">
-    <title>
+    <!--<title>
         Black Dashboard by Creative Tim
-    </title>
+    </title>-->
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -58,61 +64,65 @@
             <div class="sidebar-wrapper">
                 <div class="logo">
                     <a href="javascript:void(0)" class="simple-text logo-mini">
-                        CT
+
+                        <img src="../assets/icons/m.ico" />
                     </a>
                     <a href="javascript:void(0)" class="simple-text logo-normal">
-                        Creative Tim
+                        Millta System
                     </a>
                 </div>
                 <ul class="nav">
                     <li class="active ">
-                        <a href="./dashboard.html">
-                            <i class="tim-icons icon-chart-pie-36"> </i>
-                            <p> Dashboard</p>
+                        <a href="./tables.html">
+                            <!--<i class="tim-icons icon-atom"> </i>-->
+                            <p style="font-size:1vw;"> Alarms</p>
                         </a>
                     </li>
+
+                    <li>
+                        <a href="./dashboard.html">
+                            <!--<img src="../assets/icons/UMF.ico" />-->
+                            <!--<i class="tim-icons icon-chart-pie-36"> </i>-->
+                            <p style="font-size:1vw;"> Performence</p>
+                        </a>
+                    </li>
+
                     <li>
                         <a href="./icons.html">
-                            <i class="tim-icons icon-atom"> </i>
-                            <p> Icons</p>
+                            <!--<i class="tim-icons icon-pin"> </i>-->
+                            <p style="font-size:1vw;"> modules</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./map.html">
-                            <i class="tim-icons icon-pin"> </i>
-                            <p> Maps</p>
+                        <a href="./UMF_config.html">
+                            <!--<i class="tim-icons icon-bell-55"> </i>-->
+                            <p style="font-size:1vw;"> Description</p>
                         </a>
                     </li>
                     <li>
                         <a href="./notifications.html">
-                            <i class="tim-icons icon-bell-55"> </i>
-                            <p> Notifications</p>
+                            <!--<i class="tim-icons icon-single-02"> </i>-->
+                            <p style="font-size:1vw;"> Dashboard-2</p>
                         </a>
                     </li>
                     <li>
                         <a href="./user.html">
-                            <i class="tim-icons icon-single-02"> </i>
-                            <p> User Profile</p>
+                            <!--<i class="tim-icons icon-single-02"> </i>-->
+                            <p style="font-size:1vw;"> Dashboard-3</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./tables.html">
-                            <i class="tim-icons icon-puzzle-10"> </i>
-                            <p> Table List</p>
+                        <a href="./user.html">
+                            <!--<i class="tim-icons icon-single-02"> </i>-->
+                            <p style="font-size:1vw;"> Dashboard-4</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="./typography.html">
-                            <i class="tim-icons icon-align-center"> </i>
-                            <p> Typography</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./rtl.html">
-                            <i class="tim-icons icon-world"> </i>
-                            <p> RTL Support</p>
-                        </a>
-                    </li>
+                    <!--<li>
+        <a href="./rtl.html">
+            <i class="tim-icons icon-world"> </i>
+            <p> RTL Support</p>
+        </a>
+    </li>-->
                     <li class="active-pro">
                         <a href="./upgrade.html">
                             <i class="tim-icons icon-spaceship"> </i>
@@ -124,10 +134,13 @@
         </div>
         <div class="main-panel">
             <!-- Navbar -->
+           
             <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
                 <div class="container-fluid">
+                    
                     <div class="navbar-wrapper">
                         <div class="navbar-toggle d-inline">
+                            
                             <button type="button" class="navbar-toggler">
                                 <span class="navbar-toggler-bar bar1"> </span>
                                 <span class="navbar-toggler-bar bar2"> </span>
@@ -157,23 +170,34 @@
                                         Notifications
                                     </p>
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-right dropdown-navbar">
-                                    <li class="nav-link"> <a href="#" class="nav-item dropdown-item"> Mike John responded to your email</a> </li>
-                                    <li class="nav-link"> <a href="javascript:void(0)" class="nav-item dropdown-item"> You have 5 more tasks</a> </li>
-                                    <li class="nav-link"> <a href="javascript:void(0)" class="nav-item dropdown-item"> Your friend Michael is in town</a> </li>
-                                    <li class="nav-link"> <a href="javascript:void(0)" class="nav-item dropdown-item"> Another notification</a> </li>
-                                    <li class="nav-link"> <a href="javascript:void(0)" class="nav-item dropdown-item"> Another one</a> </li>
-                                </ul>
-                            </li>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            From<input type="text" name="StartTime"  id="datetimepicker_Start" />
+                                        </td>
+                                        <td>
+                                            To<input type="text" name="EndTime"  id="datetimepicker_End" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                        <ul class="dropdown-menu dropdown-menu-right dropdown-navbar">
+                                            <li class="nav-link"> <a href="#" class="nav-item dropdown-item"> Mike John responded to your email</a> </li>
+                                            <li class="nav-link"> <a href="javascript:void(0)" class="nav-item dropdown-item"> You have 5 more tasks</a> </li>
+                                            <li class="nav-link"> <a href="javascript:void(0)" class="nav-item dropdown-item"> Your friend Michael is in town</a> </li>
+                                            <li class="nav-link"> <a href="javascript:void(0)" class="nav-item dropdown-item"> Another notification</a> </li>
+                                            <li class="nav-link"> <a href="javascript:void(0)" class="nav-item dropdown-item"> Another one</a> </li>
+                                        </ul>
+</li>
                             <li class="dropdown nav-item">
                                 <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                                    <div class="photo">
-                                        <img src="../assets/img/anime3.png" alt="Profile Photo">
-                                    </div>
-                                    <b class="caret d-none d-lg-block d-xl-block"> </b>
+                                    <p> Process 1 </p>
+                                    <!--<div class="photo">
+                                     <img src="../assets/icons/menu1.png" alt="Profile Photo">
+                                      </div>-->
+                                    <!--<b class="caret d-none d-lg-block d-xl-block"> </b>
                                     <p class="d-lg-none">
                                         Log out
-                                    </p>
+                                    </p>-->
                                 </a>
                                 <ul class="dropdown-menu dropdown-navbar">
                                     <li class="nav-link"> <a href="javascript:void(0)" class="nav-item dropdown-item"> Profile</a> </li>
@@ -191,7 +215,7 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH">
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Search Process">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="tim-icons icon-simple-remove"> </i>
                             </button>
@@ -205,8 +229,8 @@
                     <div class="col-12">
                         <div class="card card-chart">
                             <div class="card-header">
-                                <h5 class="card-category"> Total Shipments</h5>
-                                <h3 class="card-title"> <i class="tim-icons icon-send text-success"> </i>monitoring</h3>
+                                <h5 class="card-category"> Upload Multiple Files</h5>
+                                <h3 class="card-title"> <i class="tim-icons icon-send text-success"> </i>UMF</h3>
                                 <!--<h3 class="card-title"> <i class="tim-icons icon-bell-55 text-primary"> </i>monitoring</h3>-->
                             </div>
                             <div class="card-body">
@@ -214,12 +238,12 @@
                                     <!--<canvas id="chartBig1"> </canvas>-->
                                     <figure class="highcharts-figure">
                                         <div id="container1" style="min-width: 310px; height: 250px; margin: 0 auto; text-align: center; display: flex; align-items: center; justify-content: center;position: relative;"></div>
-                                            <!--<p class="highcharts-description">
-                                                Basic line chart showing trends in a dataset. This chart includes the
-                                                <code>series-label</code> module, which adds a label to each line for
-                                                enhanced readability.
-                                            </p>-->
-                                        
+                                        <!--<p class="highcharts-description">
+                                    Basic line chart showing trends in a dataset. This chart includes the
+                                    <code>series-label</code> module, which adds a label to each line for
+                                    enhanced readability.
+                                </p>-->
+
                                     </figure>
 
                                 </div>
@@ -231,8 +255,8 @@
                     <div class="col-lg-4">
                         <div class="card card-chart">
                             <div class="card-header">
-                                <h5 class="card-category"> Total Shipments</h5>
-                                <h3 class="card-title"> <i class="tim-icons icon-send text-success"> </i>monitoring</h3>
+                                <h5 class="card-category"> Monitoring Tools</h5>
+                                <h3 class="card-title"> <i class="tim-icons icon-send text-success"> </i>Monitoring</h3>
                                 <!--<h3 class="card-title"> <i class="tim-icons icon-bell-55 text-primary"> </i>monitoring</h3>-->
                             </div>
                             <div class="card-body">
@@ -246,7 +270,7 @@
                     <div class="col-lg-4">
                         <div class="card card-chart">
                             <div class="card-header">
-                                <h5 class="card-category"> Daily Sales</h5>
+                                <h5 class="card-category"> Upload Multiple Files</h5>
                                 <h3 class="card-title"> <i class="tim-icons icon-delivery-fast text-info"> </i>UMF</h3>
                             </div>
                             <div class="card-body">
@@ -260,7 +284,7 @@
                     <div class="col-lg-4">
                         <div class="card card-chart">
                             <div class="card-header">
-                                <h5 class="card-category"> Completed Tasks</h5>
+                                <h5 class="card-category"> Smart Alarms</h5>
                                 <h3 class="card-title"> <i class="tim-icons icon-bell-55 text-primary"> </i>Export Alarms</h3>
                             </div>
                             <div class="card-body">
@@ -276,8 +300,8 @@
                     <div class="col-lg-6 col-md-12">
                         <div class="card card-tasks">
                             <div class="card-header ">
-                                <h6 class="title d-inline"> Tasks(5)</h6>
-                                <p class="card-category d-inline"> today</p>
+                                <h6 class="title d-inline"> Process Errors</h6>
+                                <p class="card-category d-inline"> Count Errors - 5</p>
                                 <div class="dropdown">
                                     <button type="button" class="btn btn-link dropdown-toggle btn-icon" data-toggle="dropdown">
                                         <i class="tim-icons icon-settings-gear-63"> </i>
@@ -305,8 +329,8 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <p class="title"> Update the Documentation</p>
-                                                    <p class="text-muted"> Dwuamish Head, Seattle, WA 8:47 AM</p>
+                                                    <p class="title"> Errors 1</p>
+                                                    <p class="text-muted"> 2022-09-29 10:00:04 Errors Details XXX</p>
                                                 </td>
                                                 <td class="td-actions text-right">
                                                     <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
@@ -326,8 +350,8 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <p class="title"> GDPR Compliance</p>
-                                                    <p class="text-muted"> The GDPR is a regulation that requires businesses to protect the personal data and privacy of Europe citizens for transactions that occur within EU member states.</p>
+                                                    <p class="title"> Errors 2</p>
+                                                    <p class="text-muted"> 2022-09-29 10:00:04 Errors Details YYY</p>
                                                 </td>
                                                 <td class="td-actions text-right">
                                                     <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
@@ -347,8 +371,8 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <p class="title"> Solve the issues</p>
-                                                    <p class="text-muted"> Fifty percent of all respondents said they would be more likely to shop at a company </p>
+                                                    <p class="title">  Errors 2</p>
+                                                    <p class="text-muted">  2022-09-29 10:00:04 Errors Details ZZZ </p>
                                                 </td>
                                                 <td class="td-actions text-right">
                                                     <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
@@ -356,69 +380,7 @@
                                                     </button>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="form-check">
-                                                        <label class="form-check-label">
-                                                            <input class="form-check-input" type="checkbox" value="">
-                                                            <span class="form-check-sign">
-                                                                <span class="check"> </span>
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <p class="title"> Release v2.0.0</p>
-                                                    <p class="text-muted"> Ra Ave SW, Seattle, WA 98116, SUA 11:19 AM</p>
-                                                </td>
-                                                <td class="td-actions text-right">
-                                                    <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
-                                                        <i class="tim-icons icon-pencil"> </i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="form-check">
-                                                        <label class="form-check-label">
-                                                            <input class="form-check-input" type="checkbox" value="">
-                                                            <span class="form-check-sign">
-                                                                <span class="check"> </span>
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <p class="title"> Export the processed files</p>
-                                                    <p class="text-muted"> The report also shows that consumers will not easily forgive a company once a breach exposing their personal data occurs. </p>
-                                                </td>
-                                                <td class="td-actions text-right">
-                                                    <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
-                                                        <i class="tim-icons icon-pencil"> </i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="form-check">
-                                                        <label class="form-check-label">
-                                                            <input class="form-check-input" type="checkbox" value="">
-                                                            <span class="form-check-sign">
-                                                                <span class="check"> </span>
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <p class="title"> Arival at export process</p>
-                                                    <p class="text-muted"> Capitol Hill, Seattle, WA 12:34 AM</p>
-                                                </td>
-                                                <td class="td-actions text-right">
-                                                    <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
-                                                        <i class="tim-icons icon-pencil"> </i>
-                                                    </button>
-                                                </td>
-                                            </tr>
+                                          
                                         </tbody>
                                     </table>
                                 </div>
@@ -428,7 +390,7 @@
                     <div class="col-lg-6 col-md-12">
                         <div class="card ">
                             <div class="card-header">
-                                <h4 class="card-title"> Simple Table</h4>
+                                <h4 class="card-title">Alarms</h4>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
@@ -436,118 +398,93 @@
                                         <thead class=" text-primary">
                                             <tr>
                                                 <th>
-                                                    Name
+                                                    Time
                                                 </th>
                                                 <th>
-                                                    Country
+                                                    Name Alarm
                                                 </th>
                                                 <th>
-                                                    City
+                                                    Description
+                                                </th>
+                                                <th>
+                                                    Details
                                                 </th>
                                                 <th class="text-center">
-                                                    Salary
+                                                    severity
                                                 </th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
+                                                <th>
+                                                    2022-09-29 10:10:15
+                                                </th>
                                                 <td>
-                                                    Dakota Rice
+                                                    Alarm A
                                                 </td>
                                                 <td>
-                                                    Niger
+                                                    Description A
                                                 </td>
                                                 <td>
-                                                    Oud-Turnhout
+                                                    Details A
                                                 </td>
                                                 <td class="text-center">
-                                                    $36, 738
+                                                    critical
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <th>
+                                                    2022-09-29 10:10:10
+                                                </th>
                                                 <td>
-                                                    Minerva Hooper
+                                                    Alarm B
                                                 </td>
                                                 <td>
-                                                    Curaçao
+                                                    Description B
                                                 </td>
                                                 <td>
-                                                    Sinaai-Waas
+                                                    Details B
                                                 </td>
                                                 <td class="text-center">
-                                                    $23, 789
+                                                    minor
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <th>
+                                                    2022-09-29 10:10:08
+                                                </th>
                                                 <td>
-                                                    Sage Rodriguez
+                                                    Alarm C
                                                 </td>
                                                 <td>
-                                                    Netherlands
+                                                    Description C
                                                 </td>
                                                 <td>
-                                                    Baileux
+                                                    Details C
                                                 </td>
                                                 <td class="text-center">
-                                                    $56, 142
+                                                    major
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <th>
+                                                    2022-09-29 10:10:03
+                                                </th>
                                                 <td>
-                                                    Philip Chaney
+                                                    Alarm D
                                                 </td>
                                                 <td>
-                                                    Korea, South
+                                                    Description D
                                                 </td>
                                                 <td>
-                                                    Overland Park
+                                                    Details D
                                                 </td>
                                                 <td class="text-center">
-                                                    $38, 735
+                                                    critical
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td>
-                                                    Doris Greene
-                                                </td>
-                                                <td>
-                                                    Malawi
-                                                </td>
-                                                <td>
-                                                    Feldkirchen in Kärnten
-                                                </td>
-                                                <td class="text-center">
-                                                    $63, 542
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Mason Porter
-                                                </td>
-                                                <td>
-                                                    Chile
-                                                </td>
-                                                <td>
-                                                    Gloucester
-                                                </td>
-                                                <td class="text-center">
-                                                    $78, 615
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Jon Porter
-                                                </td>
-                                                <td>
-                                                    Portugal
-                                                </td>
-                                                <td>
-                                                    Gloucester
-                                                </td>
-                                                <td class="text-center">
-                                                    $98, 615
-                                                </td>
-                                            </tr>
+                                          
+                                           
                                         </tbody>
                                     </table>
                                 </div>
@@ -558,7 +495,7 @@
             </div>
             <footer class="footer">
                 <div class="container-fluid">
-                    <ul class="nav">
+                    <!--<ul class="nav">
                         <li class="nav-item">
                             <a href="javascript:void(0)" class="nav-link">
                                 Creative Tim
@@ -574,7 +511,7 @@
                                 Blog
                             </a>
                         </li>
-                    </ul>
+                    </ul>-->
                     <div class="copyright">
                         ©
                         <script>
@@ -757,18 +694,22 @@
     <script>
         $(document).ready(function () {
             // Javascript method's body can be found in assets/js/demos.js
-            demo.initDashboardPageCharts();
-
+            //demo.initDashboardPageCharts();
+            datepicker_GetDate();
+            GetHighchart('container1', '../json/json.html');
+            GetHighchart('container2', '../json/json.html');
+            GetHighchart('container3', '../json/json.html');
+            GetHighchart('container4', '../json/json.html');
         });
     </script>
     <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
-    <script>
+    <!--<script>
         window.TrackJS &&
             TrackJS.install({
                 token: "ee6fab19c5a04ac1a32a645abde4613a",
                 application: "black-dashboard-free"
             });
-    </script>
+    </script>-->
 
     <script>
         //var data = "[[1664204700000,376],[1664205000000,375],[1664224500000,1112],[1664224800000,1113],[1664225100000,1114],[1664225400000,1113],[1664225700000,1114],[1664226000000,1114],[1664226300000,1113],[1664226600000,1114],[1664226900000,1114],[1664227200000,1114],[1664227500000,1114],[1664227800000,1113],[1664228100000,1114],[1664228400000,1114],[1664228700000,1113],[1664229000000,1114],[1664229300000,1113],[1664229600000,1115],[1664229900000,1113],[1664230200000,1115],[1664230500000,1114],[1664230800000,1114],[1664231100000,1116],[1664231400000,1117],[1664231700000,1115],[1664232000000,1113],[1664232300000,1114],[1664232600000,1113],[1664232900000,1113],[1664233200000,1111],[1664233500000,1113],[1664233800000,1113],[1664234100000,1112],[1664234400000,1110],[1664234700000,1111],[1664289600000,952],[1664289900000,953],[1664290200000,954]]";
@@ -778,224 +719,183 @@
         //$(document).ready(function () {
         //    alert(1);
 
+      
+       
 
-        Highcharts.getJSON(
-            '../json/json.html',
-            function (data) {
-               
-                Highcharts.chart('container1', {
-                    colors: ['#2b908f', '#90ee7e', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066',
-                        '#eeaaee', '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
-                    chart: {
-                        backgroundColor: {
-                            linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
-                            stops: [
-                                [0, '#1f1f2e'],
-                                [1, '#1f1f2e']
-                            ]
+        function GetHighchart(container_num,JsonData) {
+            Highcharts.getJSON(
+                JsonData,
+                function (data) {
+
+                    Highcharts.chart(container_num, {
+                        colors: ['#2b908f', '#90ee7e', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066',
+                            '#eeaaee', '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
+                        chart: {
+                            backgroundColor: {
+                                linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
+                                stops: [
+                                    [0, '#1f1f2e'],
+                                    [1, '#1f1f2e']
+                                ]
+                            },
+                            style: {
+                                fontFamily: '\'Unica One\', sans-serif'
+                            },
+                            plotBorderColor: '#606063'
                         },
-                        style: {
-                            fontFamily: '\'Unica One\', sans-serif'
+
+
+                        legend: {
+                            align: 'right',
+                            itemDistance: 20,
                         },
-                        plotBorderColor: '#606063'
-                    },
-                    
 
-                    legend: {
-                        align: 'right',
-                        itemDistance: 20,
-                    },
+                        xAxis: {
 
-                    xAxis: {
-
-                        type: 'datetime',
-                        min: null,
-                        text: 'datetime '
-                    },
+                            type: 'datetime',
+                            min: null,
+                            text: 'datetime '
+                        },
 
 
 
-                    yAxis: [{
-                        title: {
-                            text: 'count'
+                        yAxis: [{
+                            title: {
+                                text: 'count'
+                            }
+                        },
+
+                        {
+                            title: {
+                                text: 'xxx'
+                            },
+                            opposite: true
                         }
-                    },
+                        ],
+                        series: data
+                    })
+                }
+            );
 
-                    {
-                        title: {
-                            text: 'xxx'
-                        },
-                        opposite: true
-                    }
-                    ],
-                    series: data
-                })
+        }
+
+        function formatDate(date) {
+            var d;
+            try {
+                d = new Date(date);
+                if (d != "Invalid Date") {
+                    hours = d.getHours();
+                    minutes = d.getMinutes();
+                    seconds = d.getSeconds();
+                    month = '' + (d.getMonth() + 1),
+                        day = '' + d.getDate(),
+                        year = d.getFullYear();
+
+                    console.log(d)
+                    if (hours < 10) { hours = "0" + hours; }
+                    if (minutes < 10) { minutes = "0" + minutes; }
+                    if (seconds < 10) { seconds = "0" + seconds; }
+                    if (month.length < 2)
+                        month = '0' + month;
+                    if (day.length < 2)
+                        day = '0' + day;
+                    var strDate = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+                    return strDate;
+                }
+            } catch (e) {
+                return "1990-01-01 00:00:00";
             }
-        );
-           
-        Highcharts.getJSON(
-            '../json/json.html',
-            function (data) {
+        }
 
-                Highcharts.chart('container2', {
-                    colors: ['#2b908f', '#90ee7e', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066',
-                        '#eeaaee', '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
-                    chart: {
-                        backgroundColor: {
-                            linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
-                            stops: [
-                                [0, '#2a2a2b'],
-                                [1, '#3e3e40']
-                            ]
-                        },
-                        style: {
-                            fontFamily: '\'Unica One\', sans-serif'
-                        },
-                        plotBorderColor: '#606063'
-                    },
+        // convert all format date to format YYYY/mm/dd hh:mm:ss and add day --from time filtering
+        function formatDateAddDay(date, addDay) {
+            var today = new Date();
+            var d;
+            try {
+                d = new Date(date);
+                if (d != "Invalid Date") {
+                    d.setDate(today.getDate() + addDay);
+                    hours = d.getHours();
+                    minutes = d.getMinutes();
+                    seconds = d.getSeconds();
+                    month = '' + (d.getMonth() + 1),
+                        day = '' + d.getDate(),
+                        year = d.getFullYear();
 
-
-                    legend: {
-                        align: 'right',
-                        itemDistance: 20,
-                    },
-
-                    xAxis: {
-
-                        type: 'datetime',
-                        min: null,
-                        text: 'datetime '
-                    },
-
-
-
-                    yAxis: [{
-                        title: {
-                            text: 'count'
-                        }
-                    },
-
-                    {
-                        title: {
-                            text: 'xxx'
-                        },
-                        opposite: true
-                    }
-                    ],
-                    series: data
-                })
+                    console.log(d)
+                    if (hours < 10) { hours = "0" + hours; }
+                    if (minutes < 10) { minutes = "0" + minutes; }
+                    if (seconds < 10) { seconds = "0" + seconds; }
+                    if (month.length < 2)
+                        month = '0' + month;
+                    if (day.length < 2)
+                        day = '0' + day;
+                    var strDate = `${year}/${month}/${day} ${hours}:${minutes}`;
+                    return strDate;
+                }
+            } catch (e) {
+                return "1990-01-01 00:00:00";
             }
-        );
+        }
 
+        function isValidDate(date) {
+            return date && Object.prototype.toString.call(date) === "[object Date]" && !isNaN(date);
+        }
 
-        Highcharts.getJSON(
-            '../json/json.html',
-            function (data) {
+        $('.some_class').datetimepicker(({ step: 10 }));
 
-                Highcharts.chart('container3', {
-                    colors: ['#2b908f', '#90ee7e', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066',
-                        '#eeaaee', '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
-                    chart: {
-                        backgroundColor: {
-                            linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
-                            stops: [
-                                [0, '#2a2a2b'],
-                                [1, '#3e3e40']
-                            ]
-                        },
-                        style: {
-                            fontFamily: '\'Unica One\', sans-serif'
-                        },
-                        plotBorderColor: '#606063'
-                    },
+        function datepicker_GetDate() {
+            //document.getElementById("datetimepicker_Start").value = addMinutes(-240);
+            //document.getElementById("datetimepicker_Start").value = GetDate(-1);
+            //document.getElementById("datetimepicker_End").value = GetDate(0);
+            //אושרה שיפור כדי שיראה תאריך מלא 2022-06-08
+            document.getElementById("datetimepicker_Start").value = formatDateAddDay(new Date(), -1);
+            document.getElementById("datetimepicker_End").value = formatDateAddDay(new Date(), 0);
+        }
 
+        function GetDate(d) {
+            var today = new Date();
+            var currentdate = new Date();
+            currentdate.setDate(today.getDate() + d);
 
-                    legend: {
-                        align: 'right',
-                        itemDistance: 20,
-                    },
+            var datetime = + currentdate.getFullYear() + "/"
+                + (currentdate.getMonth() + 1) + "/"
+                + currentdate.getDate() + " "
+                + currentdate.getHours() + ":"
+                + currentdate.getMinutes()
+            return datetime
+        }
 
-                    xAxis: {
-
-                        type: 'datetime',
-                        min: null,
-                        text: 'datetime '
-                    },
-
-
-
-                    yAxis: [{
-                        title: {
-                            text: 'count'
-                        }
-                    },
-
-                    {
-                        title: {
-                            text: 'xxx'
-                        },
-                        opposite: true
-                    }
-                    ],
-                    series: data
-                })
-            }
-        );
-
-
-        Highcharts.getJSON(
-            '../json/json.html',
-            function (data) {
-
-                Highcharts.chart('container4', {
-                    colors: ['#2b908f', '#90ee7e', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066',
-                        '#eeaaee', '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
-                    chart: {
-                        backgroundColor: {
-                            linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
-                            stops: [
-                                [0, '#2a2a2b'],
-                                [1, '#3e3e40']
-                            ]
-                        },
-                        style: {
-                            fontFamily: '\'Unica One\', sans-serif'
-                        },
-                        plotBorderColor: '#606063'
-                    },
-
-
-                    legend: {
-                        align: 'right',
-                        itemDistance: 20,
-                    },
-
-                    xAxis: {
-
-                        type: 'datetime',
-                        min: null,
-                        text: 'datetime '
-                    },
+        function addMinutes(minutes) {
+            var currentdate = new Date();
+            currentdate.setMinutes(currentdate.getMinutes() + minutes);
+            var datetime = + currentdate.getFullYear() + "/"
+                + (currentdate.getMonth() + 1) + "/"
+                + currentdate.getDate() + " "
+                + currentdate.getHours() + ":"
+                + currentdate.getMinutes()
+            return datetime
+        }
 
 
 
-                    yAxis: [{
-                        title: {
-                            text: 'count'
-                        }
-                    },
 
-                    {
-                        title: {
-                            text: 'xxx'
-                        },
-                        opposite: true
-                    }
-                    ],
-                    series: data
-                })
-            }
-        );
+        function GetArea(data) {
+            //var s = document.getElementById("BOOT_xAxis").value;
+            //var res = s.split(",");
+            //res = res.sort();
+            var str = JSON.stringify(data);
+            //var p = JSON.parse(j);
+            var n1 = str.indexOf('time');
+            var n2 = str.indexOf(']},');
+            str = str.substring(n1 + 7, n2);
+            str = str.replace(/"/g, '');
+            var res = str.split(",");
+            res = res.sort();
+            return res
+        }
+
+       
 
 
     </script>
